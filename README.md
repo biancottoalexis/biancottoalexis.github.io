@@ -70,4 +70,4 @@ https://github.com/biancottoalexis/baincottoalexis.github.io
 ## Auteur
 
 Alexis Biancotto
-Étudiant en cybersécurité à Ynov Campus.
+
