@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Titre}}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<header>
+    <h1>{{.Titre}}</h1>
+    <nav>
+        <a href="/">Accueil</a>
+        <a href="/projects">Projets</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <img src="{{.Image}}" alt="{{.Titre}}" width="300">
+
+        <h2>Introduction</h2>
+        <p>{{.Introduction}}</p>
+
+        <h2>Description</h2>
+        <p>{{.Description}}</p>
+
+        <h2>Technologies</h2>
+        <ul>
+            {{range .Technologies}}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+
+        <h2>Fonctionnalités</h2>
+        <ul>
+            {{range .Fonctionnalites}}
+            <li>{{.}}</li>
+            {{end}}
+        </ul>
+
+        {{if .Depot}}
+        <a href="{{.Depot}}">Voir le dépôt GitHub</a>
+        {{end}}
+
+        {{if .Video}}
+        <a href="{{.Video}}">Voir la vidéo</a>
+        {{end}}
+
+        <p><a href="/projects">Retour aux projets</a></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Alexis Biancotto</p>
+</footer>
+
+</body>
+</html>

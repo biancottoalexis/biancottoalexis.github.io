@@ -1,0 +1,35 @@
+
+[
+    {
+        "id": "kombaly",
+        "titre": "Kombaly",
+        "image": "/images/kombaly.png",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "introduction": "Site de gestion pour les clubs de sports de combat.",
+        "description": "J'ai créé Kombaly pour faciliter la gestion des clubs.",
+        "fonctionnalites": [
+            "Gestion des adhérents",
+            "Cotisations",
+            "Présences",
+            "Grades"
+        ],
+        "depot": "",
+        "video": ""
+    },
+    {
+        "id": "red",
+        "titre": "RED",
+        "image": "/images/red.png",
+        "technologies": ["Go", "Git"],
+        "introduction": "Jeu de rôle développé en Go.",
+        "description": "Jeu réalisé en binôme pendant ma formation à Ynov Campus.",
+        "fonctionnalites": [
+            "Combats",
+            "Personnages",
+            "Argent",
+            "Choix"
+        ],
+        "depot": "",
+        "video": ""
+    }
+]
