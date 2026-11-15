@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Mes projets</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
 
     <h1>Mes projets</h1>
 
     {{range .}}
+    <section>
         <h2>{{.Titre}}</h2>
 
-        <img src="{{.Image}}" width="400" alt="{{.Titre}}">
+        <img src="{{.Image}}" alt="{{.Titre}}" width="400">
 
         <p>{{.Introduction}}</p>
 
@@ -21,11 +22,12 @@
 
         <ul>
             {{range .Technologies}}
-                <li>{{.}}</li>
+            <li>{{.}}</li>
             {{end}}
         </ul>
 
         <a href="/projects/{{.ID}}">Consulter</a>
+    </section>
     {{end}}
 
     <p><a href="/">Retour à l'accueil</a></p>

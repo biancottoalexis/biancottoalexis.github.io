@@ -64,8 +64,7 @@ func main() {
 	http.HandleFunc("/projects", projets)
 	http.HandleFunc("/projects/", detail)
 
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("."))))
-	http.Handle("/images/", http.StripPrefix("/images/", http.FileServer(http.Dir("images"))))
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./assets"))))
 
 	println("Serveur : http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
